@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Weight Converter</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 offset-md-3">
+          <h1 class="display-4 text-center mb-3">Weight Converter</h1>
+          <form>
+            <div class="form-group">
+              <input
+                id="Inputer"
+                type="number"
+                class="form-control form-control-lg mb-3"
+                placeholder="Enter Pounds..."
+              />
+              <select class="form-control" id="sel1">
+                <option>Pounds</option>
+                <option>Kilograms</option>
+                <option>Grams</option>
+                <option>Ounces</option>
+              </select>
+            </div>
+          </form>
+          <div id="output">
+            <!--            <div class="card bg-warning mb-2 " id="lbs">-->
+            <!--              <div class="card-block">-->
+            <!--                <h4>Pounds:</h4>-->
+            <!--                <div id="lbsOutput"></div>-->
+            <!--              </div>-->
+            <!--            </div>-->
+
+            <div id="pounds">
+              <div class="card bg-primary mb-2">
+                <div class="card-block">
+                  <h4 id="grams">Grams:</h4>
+                  <div id="gramsOutput"></div>
+                </div>
+              </div>
+
+              <div class="card bg-success mb-2">
+                <div class="card-block">
+                  <h4 id="kg">Kilograms:</h4>
+                  <div id="kgOutput"></div>
+                </div>
+              </div>
+
+              <div class="card bg-danger mb-2">
+                <div class="card-block">
+                  <h4 id="oz">Ounces:</h4>
+                  <div id="ozOutput"></div>
+                </div>
+              </div>
+            </div>
+
+            <div id="kgs">
+              <div class="card bg-primary mb-2">
+                <div class="card-block">
+                  <h4 id="grams1">Grams:</h4>
+                  <div id="grams1Output"></div>
+                </div>
+              </div>
+
+              <div class="card bg-success mb-2">
+                <div class="card-block">
+                  <h4 id="lbs">Pounds:</h4>
+                  <div id="lbsOutput"></div>
+                </div>
+              </div>
+
+              <div class="card bg-danger mb-2">
+                <div class="card-block">
+                  <h4 id="oz1">Ounces:</h4>
+                  <div id="oz1Output"></div>
+                </div>
+              </div>
+            </div>
+
+            <div id="gramz">
+              <div class="card bg-primary mb-2">
+                <div class="card-block">
+                  <h4 id="lbs2">Pounds:</h4>
+                  <div id="lbs2Output"></div>
+                </div>
+              </div>
+
+              <div class="card bg-success mb-2">
+                <div class="card-block">
+                  <h4 id="kg2">Kilograms:</h4>
+                  <div id="kg2Output"></div>
+                </div>
+              </div>
+
+              <div class="card bg-danger mb-2">
+                <div class="card-block">
+                  <h4 id="oz2">Ounces:</h4>
+                  <div id="oz2Output"></div>
+                </div>
+              </div>
+            </div>
+
+            <div id="ozs">
+              <div class="card bg-primary mb-2">
+                <div class="card-block">
+                  <h4 id="lbs3">Pounds:</h4>
+                  <div id="lbs3Output"></div>
+                </div>
+              </div>
+
+              <div class="card bg-success mb-2">
+                <div class="card-block">
+                  <h4 id="kg3">Kilograms:</h4>
+                  <div id="kg3Output"></div>
+                </div>
+              </div>
+
+              <div class="card bg-danger mb-2">
+                <div class="card-block">
+                  <h4 id="grams2">Grams:</h4>
+                  <div id="grams2Output"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
