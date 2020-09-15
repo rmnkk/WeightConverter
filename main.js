@@ -98,9 +98,9 @@ document.getElementById('sel1').addEventListener('change', (e) =>{
         document.getElementById('Inputer').addEventListener('input',(e) => {
                 let inp = e.target.value
 
-                document.getElementById('grams1Output').innerHTML = inp * 1000;
-                document.getElementById('lbsOutput').innerHTML = inp * 2.2046
-                document.getElementById('oz1Output').innerHTML = inp * 35.274
+                document.getElementById('grams1Output').innerHTML = (inp * 1000).toFixed(2);
+                document.getElementById('lbsOutput').innerHTML = (inp * 2.2046).toFixed(2)
+                document.getElementById('oz1Output').innerHTML = (inp * 35.274).toFixed(2)
         })
     } else if (variant === 'Grams') {
         document.getElementById('Inputer').placeholder = 'Enter Grams...'
@@ -112,9 +112,9 @@ document.getElementById('sel1').addEventListener('change', (e) =>{
         document.getElementById('Inputer').addEventListener('input', (e) => {
                 let inp = e.target.value
 
-                document.getElementById('lbs2Output').innerHTML = inp / 453.59237
-                document.getElementById('oz2Output').innerHTML = inp * 0.035274
-                document.getElementById('kg2Output').innerHTML = inp /1000
+                document.getElementById('lbs2Output').innerHTML = (inp / 453.59237).toFixed(2)
+                document.getElementById('oz2Output').innerHTML = (inp * 0.035274).toFixed(2)
+                document.getElementById('kg2Output').innerHTML = (inp /1000).toFixed(2)
             })
     } else if (variant === 'Pounds') {
         document.getElementById('Inputer').placeholder = 'Enter Pounds...'
@@ -134,9 +134,9 @@ document.getElementById('sel1').addEventListener('change', (e) =>{
         document.getElementById('Inputer').addEventListener('input', (e) => {
             let inp = e.target.value
 
-            document.getElementById('lbs3Output').innerHTML = inp/16
-            document.getElementById('kg3Output').innerHTML = inp /  35.274
-            document.getElementById('grams2Output').innerHTML = inp / 28.35
+            document.getElementById('lbs3Output').innerHTML = (inp/16).toFixed(2)
+            document.getElementById('kg3Output').innerHTML = (inp /  35.274).toFixed(2)
+            document.getElementById('grams2Output').innerHTML = (inp / 28.35).toFixed(2)
         })
 
     }
@@ -151,35 +151,35 @@ document.getElementById('Inputer').addEventListener('input', (e) => {
     // Makes possible to do calculations with Pounds after the page is load
     if (document.getElementById('Inputer').placeholder === 'Enter Pounds...') {
         document.getElementById('pounds').style.display = 'block'
-        document.getElementById('gramsOutput').innerHTML = inp/0.0022046;
-        document.getElementById('kgOutput').innerHTML = inp/2.2046;
-        document.getElementById('ozOutput').innerHTML = inp*16
+        document.getElementById('gramsOutput').innerHTML = (inp/0.0022046).toFixed(2);
+        document.getElementById('kgOutput').innerHTML = (inp/2.2046).toFixed(2);
+        document.getElementById('ozOutput').innerHTML = (inp*16).toFixed(2);
     }
 
 
     document.getElementById('sel1').addEventListener('change', (e) => {
         if (e.target.value === 'Kilograms') {
-            document.getElementById('grams1Output').innerHTML = inp * 1000;
-            document.getElementById('lbsOutput').innerHTML = inp * 2.2046
-            document.getElementById('oz1Output').innerHTML = inp * 35.274
+            document.getElementById('grams1Output').innerHTML = (inp * 1000).toFixed(2);
+            document.getElementById('lbsOutput').innerHTML = (inp * 2.2046).toFixed(2);
+            document.getElementById('oz1Output').innerHTML = (inp * 35.274).toFixed(2);
         }
 
         if (e.target.value === 'Grams') {
-            document.getElementById('lbs2Output').innerHTML = inp / 453.59237
-            document.getElementById('oz2Output').innerHTML = inp * 0.035274
-            document.getElementById('kg2Output').innerHTML = inp /1000
+            document.getElementById('lbs2Output').innerHTML = (inp / 453.59237).toFixed(2);
+            document.getElementById('oz2Output').innerHTML = (inp * 0.035274).toFixed(2);
+            document.getElementById('kg2Output').innerHTML = (inp /1000).toFixed(2);
         }
 
         if (e.target.value === 'Pounds') {
-            document.getElementById('gramsOutput').innerHTML = inp/0.0022046;
-            document.getElementById('kgOutput').innerHTML = inp/2.2046;
-            document.getElementById('ozOutput').innerHTML = inp*16
+            document.getElementById('gramsOutput').innerHTML = (inp/0.0022046).toFixed(2);
+            document.getElementById('kgOutput').innerHTML = (inp/2.2046).toFixed(2);
+            document.getElementById('ozOutput').innerHTML = (inp*16).toFixed(2);
         }
 
         if (e.target.value === 'Ounces') {
-            document.getElementById('lbs3Output').innerHTML = inp/16
-            document.getElementById('kg3Output').innerHTML = inp /  35.274
-            document.getElementById('grams2Output').innerHTML = inp / 28.35
+            document.getElementById('lbs3Output').innerHTML = (inp/16).toFixed(2)
+            document.getElementById('kg3Output').innerHTML = (inp /  35.274).toFixed(2)
+            document.getElementById('grams2Output').innerHTML = (inp / 28.35).toFixed(2)
         }
     })
 });
